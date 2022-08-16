@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/fondo.png);
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+.container-img{
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 430px;
+    padding: 16px 0;
+}
+.logo-header {
+    display: none;
+}
+header img {
+    width: 35px;
+    margin-left: 8px;  
+}
+.nav-bar{
+    color: #ffffff;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(193,18,20,0.95);
+    margin-left: -100%;
+    transition: all 0.5s;
+    height: 2px;
+}
+.menu__link {
+    display: block;
+    padding: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu__link:hover {
+    background: #ffffff;
+    color: #C11214;
+
+}
+.show {
+    margin-left: 0;
+    height: auto;
+    position: absolute;
+    z-index: 10;
+    padding: 8px;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    margin: 0 auto 28px;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 176px;
+    height: auto;
+    display: block;
+    margin: auto;
+
+}
+.variedades {
+    width: 100%;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+}
+section h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: block;
+    width: 300px;
+    margin: 24px auto;
+}
+.variedad {
+    position: relative;
+    width: 350px;
+    height: 220px;
+    margin: 16px auto;
+
+}
+.variedad img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    max-width: 95vw;
+    display: block;
+    border-radius: 8px;
+}
+.box-link{
+    width: 350px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.variedad a{
+    background-color: #D80000;
+    color: #FBC900;
+    font-weight: 500;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.promo{
+    margin: 56px auto;
+    text-align: center;
+}
+.container-carrousel {
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.btn {
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(255,255, 255, 0.2);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+.back {
+    left: 2%;
+    top: calc(55% - 20px);
+}
+.go {
+    right: 2%;
+    top: calc(55% - 20px);
+}
+.container-carrousel img {
+    width: 100%;
+
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0 auto;
+}
+footer .line{
+    width: 70px;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: #ffffff;
+}
+footer h2 {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 32px;
+}
+.logo-footer img {
+    width: 80px;  
+}
+footer section {
+    display: flex;
+    flex-direction: column;
+}
+.rrss{
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto;
+}
+.rrss p:first-child{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.contact{
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: 1.1em 0;
+} 
+.point {
+    display: flex;
+    margin: auto;
+    padding: 8px 0;
+}
+.point>img {
+    padding-right: 8px;
+    width: 28px;
+}
+.footer-der{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background: rgba(255,255,255, 0.1);
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+
+/* --- Styles piezas --- */
+
+.cip{
+    background: transparent;
+    height: 8px;
+}
+main h1{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 40px auto 8px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3em;
+}
+.img-piezas{
+    width: 100%;
+    margin: 0 auto 32px;
+}
+.img-piezas img{
+    width: 70px;
+    display: block;
+    margin: auto;
+}
+.container-rolls{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.box-roll{
+    width: 359px;
+    height: 370px;
+    border-radius: 16px;
+    background: linear-gradient(113.61deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 71.07%);
+    box-shadow: 0px 1px 24px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px auto;
+
+
+
+}
+.box-img-roll{
+    width: 328px;
+    height: 223px;
+    margin: 16px 0;
+}
+.box-img-roll img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.desc-roll{
+    text-align: center;
+    margin: 0 16px;
+    
+}
+.desc-roll p{
+    margin: 16px 0;
+}
+
+
+/* --- Styles Combos --- */
+.box-combo{
+    height: 355px;
+}
+
+/* --- Styles platos ---*/
+.p-h1{
+    margin: 40px auto;
+}
+
+/* --- Styles contacto --- */
+
+.container-img-c{
+    background: url(../img/bar-geisha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+}
+
+.contact-container{
+    width: 80%;
+    height: 100%;
+    margin: 152px auto;
+    border-radius: 16px;
+    background: linear-gradient(113.61deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 71.07%);
+    box-shadow: 0px 1px 24px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 32px 0;
+}
+.title-c{
+    margin: 0 auto;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 0;
+}
+.footer-c{
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .container-img{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 660px;
+        padding: 0;
+    }
+    .bg-container {
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        padding: 10px 0;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-header {
+        display: block;
+        width: 80px;
+        background-color: #ffffff;
+    }
+    .logo-header img{
+        width: 60px;
+        display: block;
+        align-items: center;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .main-nav {
+        background: #ffffff;
+    }
+    .menu {
+        margin-left: 0;
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        background: #ffffff;
+    }
+    .menu__item{
+        margin: 0 50px;
+    }
+    .menu__link {
+        font-size: 1em;
+        color: #C11214;
+        font-weight: 500;
+    }
+    .menu__link:hover {
+        background: rgba(193,18,20,0.8);
+        color: #ffffff;
+    }
+    main {
+        width: 100%;
+    }
+    .logo {
+        margin: 32px auto;
+        justify-content: flex-end;
+    }
+    .logo img {
+        width: 330px;
+        margin: 56px 160px 0;
+    }
+    .variedades {
+        margin: 24px auto;
+    }
+
+    .box-variedades{
+        display: flex;
+        width: 85%;
+        margin: 32px auto;
+    }
+
+    .promo{
+        width:60%  ;
+    }
+    footer {
+        margin: 50px auto 0;
+        width: 100%;
+    }
+    .container-footer {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 88px auto;
+        font-size: 0.9em;
+
+    }
+    .logo-footer{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        align-items: flex-start;
+    }
+    .logo-footer img {
+        width: 96px;
+        margin-left: 80px;
+    }
+    .contact{
+        font-size: 1.3em;
+        padding: 1.3em 0;
+    }
+    footer>section {
+        font-size: 0.9em;
+    }
+    footer section{
+        margin-bottom: 0;
+        width: 33%;
+    }
+    .rrss{
+        margin: 0 auto;
+    }
+    .point {
+        margin: 0 auto 16px;
+        padding: 0;
+    }
+    .point-two {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+
+
+    /* --- Styles piezas --- */
+
+    .cip{
+        background: transparent;
+        height: 150px;
+    }
+    .img-piezas{
+        width: 100%;
+        margin: 0 auto 56px;
+    }
+    .img-piezas img{
+        width: 90px;
+
+    }
+    .container-rolls{
+        width: 85%;
+        margin: 0 auto 160px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } 
+
+    /* --- Styles contacto --- */
+    .container-img-c{
+        height: 1200px;
+    }
+    .logo-c{
+        justify-content: center;
+        margin: 120px auto;
+    }
+    .logo-c img{
+        margin: 0;
+        width: 180px;
+    }
+    
+    .contact-container{
+        width: 40%;
+        height: 100%;
+        margin: 200px auto;
+        border-radius: 16px;
+        background: linear-gradient(113.61deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 71.07%);
+        box-shadow: 0px 1px 24px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        padding: 32px 0;
+    }
+    .title-c{
+        margin: 0 auto;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0 0;
+    }
+    .footer-c{
+        margin: auto;
+    }
+
+   
+
+
+
+
+
+}
